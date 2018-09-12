@@ -3,12 +3,9 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/taotaocommon" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/taotaocommon" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/taotaomanager" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/taotaomanager" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/taotaomanager/taotaomanagerdao" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/taotaomanager/taotaomanagerpojo" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/taotaomanager/taotaomanagerservice" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/taotaomanager/taotaomanagerservice" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/taotaomanager/taotaomanagerweb" charset="UTF-8" />
   </component>
