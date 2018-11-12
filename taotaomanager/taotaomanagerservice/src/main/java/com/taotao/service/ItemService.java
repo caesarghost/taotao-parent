@@ -7,8 +7,6 @@ import com.taotao.pojo.TbItem;
  * @Description search good by id
  * @since 2018/9/14
  */
-public interface QueryTbItem {
-    TbItem getItemById(Long itemid){
-
-    }
+public interface ItemService {
+    TbItem getItemById(Long itemId);
 }

@@ -1,4 +1,4 @@
-package pojo;
+package com.taotao.pojo;
 
 public class TbOrderItem {
     private String id;
