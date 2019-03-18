@@ -1,9 +1,12 @@
 package com.taotao.service.impl;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+import com.taotao.common.pojo.EasyUIDataGridResult;
+import com.taotao.mapper.TbItemMapper;
 import com.taotao.pojo.TbItem;
 import com.taotao.pojo.TbItemExample;
 import com.taotao.service.ItemService;
-import com.taotao.mapper.TbItemMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -34,5 +37,41 @@ public class ItemServiceImpl implements ItemService {
 //                }
                 return item;
         }
+
+        /*@Override
+        public List<TbItem> selectByExample(TbItemExample example){
+            List<TbItem> list = tbItemMapper.selectByExample(example);
+            return list;
+        }*/
+
+        //接收页面参数？
+        //查询
+        //接收返回值
+
+    @Override
+    public EasyUIDataGridResult getItemList(int page, int rows) {
+        //分页处理
+        PageHelper.startPage(page,rows);
+
+        //执行查询
+        TbItemExample example = new TbItemExample();//example对象是？？？
+        List<TbItem> list = tbItemMapper.selectByExample(example);
+
+        //取分页信息
+        PageInfo pageInfo = new PageInfo(list);
+
+        //返回处理结果
+        EasyUIDataGridResult result = new EasyUIDataGridResult();
+        result.setTotal(pageInfo.getTotal());
+        result.setRows(list);
+        return result;
+    }
+
+    @Override
+    public int addItem(TbItem tbItem) {
+        int a = tbItemMapper.insert(tbItem);
+        return a;
+    }
+
 
 }

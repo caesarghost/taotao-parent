@@ -199,6 +199,12 @@
                 <artifactId>quartz</artifactId>
                 <version>${quartz.version}</version>
             </dependency>
+            <!--fastdfs文件系统-->
+            <dependency>
+                <groupId>org.csource</groupId>
+                <artifactId>fastdfs-client-java</artifactId>
+                <version>1.27-SNAPSHOT</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -237,5 +243,6 @@
                 </plugin>
             </plugins>
         </pluginManagement>
+
     </build>
 </project>
